@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-16.04]
-        node-version: [4.x, 12.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -30,7 +30,4 @@ jobs:
 
     -   name: Run yarn
         run: yarn install
-    
-    -   name: Yarn Test
-        run: yarn test
 
