@@ -29,5 +29,5 @@ jobs:
             key: yarn-${{ hashFiles('yarn.lock') }}
 
     -   name: Run yarn
-        run: yarn install
+        run: yarn install && yarn test
 
